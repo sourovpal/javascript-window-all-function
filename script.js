@@ -45,6 +45,19 @@ nameInput.addEventListener("input", (event) => {
     }
 });
 //====================================================
+<button onclick="openWindow();">Open</button>
+    <button onclick="closeOpenedWindow();">Close</button>
+    <script>
+        let openedWindow;
+        function openWindow() {
+          openedWindow = window.open("about.html");
+        }
+        
+        function closeOpenedWindow() {
+          openedWindow.close();
+        }
+    </script>
+//==================================================
 
 
 
